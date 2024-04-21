@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D9FCF072BD4E04F00A4945B /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FCF062BD4E04F00A4945B /* Destination.swift */; };
+		3D9FCF092BD4E14200A4945B /* MTPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FCF082BD4E14200A4945B /* MTPlacemark.swift */; };
 		3DF1F4D32BD4D2E700483874 /* TripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1F4D22BD4D2E700483874 /* TripApp.swift */; };
 		3DF1F4D52BD4D2E700483874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1F4D42BD4D2E700483874 /* ContentView.swift */; };
 		3DF1F4D72BD4D2E800483874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF1F4D62BD4D2E800483874 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D9FCF062BD4E04F00A4945B /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
+		3D9FCF082BD4E14200A4945B /* MTPlacemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPlacemark.swift; sourceTree = "<group>"; };
 		3DF1F4CF2BD4D2E700483874 /* Trip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF1F4D22BD4D2E700483874 /* TripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripApp.swift; sourceTree = "<group>"; };
 		3DF1F4D42BD4D2E700483874 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +40,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D9FCF052BD4E03A00A4945B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FCF062BD4E04F00A4945B /* Destination.swift */,
+				3D9FCF082BD4E14200A4945B /* MTPlacemark.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3D9FCF0A2BD4E74A00A4945B /* DestinationGroup */ = {
+			isa = PBXGroup;
+			children = (
+				3DF1F4E52BD4D47500483874 /* DestinationLocationView.swift */,
+			);
+			path = DestinationGroup;
+			sourceTree = "<group>";
+		};
+		3D9FCF0B2BD4E75900A4945B /* TripGroup */ = {
+			isa = PBXGroup;
+			children = (
+				3DF1F4E32BD4D44900483874 /* TripMapView.swift */,
+			);
+			path = TripGroup;
+			sourceTree = "<group>";
+		};
 		3DF1F4C62BD4D2E700483874 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +111,7 @@
 		3DF1F4E12BD4D33900483874 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3D9FCF052BD4E03A00A4945B /* Model */,
 				3DF1F4E22BD4D43600483874 /* View */,
 				3DF1F4D42BD4D2E700483874 /* ContentView.swift */,
 			);
@@ -91,8 +121,8 @@
 		3DF1F4E22BD4D43600483874 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3DF1F4E32BD4D44900483874 /* TripMapView.swift */,
-				3DF1F4E52BD4D47500483874 /* DestinationLocationView.swift */,
+				3D9FCF0B2BD4E75900A4945B /* TripGroup */,
+				3D9FCF0A2BD4E74A00A4945B /* DestinationGroup */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +199,8 @@
 			files = (
 				3DF1F4D52BD4D2E700483874 /* ContentView.swift in Sources */,
 				3DF1F4D32BD4D2E700483874 /* TripApp.swift in Sources */,
+				3D9FCF072BD4E04F00A4945B /* Destination.swift in Sources */,
+				3D9FCF092BD4E14200A4945B /* MTPlacemark.swift in Sources */,
 				3DF1F4E62BD4D47500483874 /* DestinationLocationView.swift in Sources */,
 				3DF1F4E42BD4D44900483874 /* TripMapView.swift in Sources */,
 			);
