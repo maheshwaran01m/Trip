@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		3D9FCF072BD4E04F00A4945B /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FCF062BD4E04F00A4945B /* Destination.swift */; };
 		3D9FCF092BD4E14200A4945B /* MTPlacemark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FCF082BD4E14200A4945B /* MTPlacemark.swift */; };
+		3D9FCF0D2BD4E7D100A4945B /* DestinationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FCF0C2BD4E7D100A4945B /* DestinationListView.swift */; };
+		3D9FCF102BD4FCCE00A4945B /* MapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FCF0F2BD4FCCE00A4945B /* MapManager.swift */; };
+		3D9FCF132BD50F4C00A4945B /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FCF122BD50F4C00A4945B /* LocationDetailView.swift */; };
+		3D9FCF152BD529D300A4945B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FCF142BD529D300A4945B /* LocationManager.swift */; };
+		3D9FCF172BD52E8600A4945B /* LocationDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9FCF162BD52E8600A4945B /* LocationDeniedView.swift */; };
+		3DC3956B2BD54FFF00B3F3D2 /* MapStyleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3956A2BD54FFF00B3F3D2 /* MapStyleConfiguration.swift */; };
+		3DC3956D2BD5516700B3F3D2 /* MapStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3956C2BD5516700B3F3D2 /* MapStyleView.swift */; };
 		3DF1F4D32BD4D2E700483874 /* TripApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1F4D22BD4D2E700483874 /* TripApp.swift */; };
 		3DF1F4D52BD4D2E700483874 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF1F4D42BD4D2E700483874 /* ContentView.swift */; };
 		3DF1F4D72BD4D2E800483874 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DF1F4D62BD4D2E800483874 /* Assets.xcassets */; };
@@ -20,6 +27,13 @@
 /* Begin PBXFileReference section */
 		3D9FCF062BD4E04F00A4945B /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		3D9FCF082BD4E14200A4945B /* MTPlacemark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTPlacemark.swift; sourceTree = "<group>"; };
+		3D9FCF0C2BD4E7D100A4945B /* DestinationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationListView.swift; sourceTree = "<group>"; };
+		3D9FCF0F2BD4FCCE00A4945B /* MapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManager.swift; sourceTree = "<group>"; };
+		3D9FCF122BD50F4C00A4945B /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
+		3D9FCF142BD529D300A4945B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		3D9FCF162BD52E8600A4945B /* LocationDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDeniedView.swift; sourceTree = "<group>"; };
+		3DC3956A2BD54FFF00B3F3D2 /* MapStyleConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStyleConfiguration.swift; sourceTree = "<group>"; };
+		3DC3956C2BD5516700B3F3D2 /* MapStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStyleView.swift; sourceTree = "<group>"; };
 		3DF1F4CF2BD4D2E700483874 /* Trip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF1F4D22BD4D2E700483874 /* TripApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripApp.swift; sourceTree = "<group>"; };
 		3DF1F4D42BD4D2E700483874 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				3DF1F4E52BD4D47500483874 /* DestinationLocationView.swift */,
+				3D9FCF0C2BD4E7D100A4945B /* DestinationListView.swift */,
 			);
 			path = DestinationGroup;
 			sourceTree = "<group>";
@@ -60,9 +75,37 @@
 		3D9FCF0B2BD4E75900A4945B /* TripGroup */ = {
 			isa = PBXGroup;
 			children = (
+				3DC395692BD54FE700B3F3D2 /* MapStyle */,
 				3DF1F4E32BD4D44900483874 /* TripMapView.swift */,
 			);
 			path = TripGroup;
+			sourceTree = "<group>";
+		};
+		3D9FCF0E2BD4FCB600A4945B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FCF0F2BD4FCCE00A4945B /* MapManager.swift */,
+				3D9FCF142BD529D300A4945B /* LocationManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3D9FCF112BD50F3A00A4945B /* SharedViews */ = {
+			isa = PBXGroup;
+			children = (
+				3D9FCF122BD50F4C00A4945B /* LocationDetailView.swift */,
+				3D9FCF162BD52E8600A4945B /* LocationDeniedView.swift */,
+			);
+			path = SharedViews;
+			sourceTree = "<group>";
+		};
+		3DC395692BD54FE700B3F3D2 /* MapStyle */ = {
+			isa = PBXGroup;
+			children = (
+				3DC3956A2BD54FFF00B3F3D2 /* MapStyleConfiguration.swift */,
+				3DC3956C2BD5516700B3F3D2 /* MapStyleView.swift */,
+			);
+			path = MapStyle;
 			sourceTree = "<group>";
 		};
 		3DF1F4C62BD4D2E700483874 = {
@@ -111,6 +154,7 @@
 		3DF1F4E12BD4D33900483874 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				3D9FCF0E2BD4FCB600A4945B /* Service */,
 				3D9FCF052BD4E03A00A4945B /* Model */,
 				3DF1F4E22BD4D43600483874 /* View */,
 				3DF1F4D42BD4D2E700483874 /* ContentView.swift */,
@@ -121,6 +165,7 @@
 		3DF1F4E22BD4D43600483874 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3D9FCF112BD50F3A00A4945B /* SharedViews */,
 				3D9FCF0B2BD4E75900A4945B /* TripGroup */,
 				3D9FCF0A2BD4E74A00A4945B /* DestinationGroup */,
 			);
@@ -199,10 +244,17 @@
 			files = (
 				3DF1F4D52BD4D2E700483874 /* ContentView.swift in Sources */,
 				3DF1F4D32BD4D2E700483874 /* TripApp.swift in Sources */,
+				3D9FCF152BD529D300A4945B /* LocationManager.swift in Sources */,
+				3D9FCF0D2BD4E7D100A4945B /* DestinationListView.swift in Sources */,
 				3D9FCF072BD4E04F00A4945B /* Destination.swift in Sources */,
+				3DC3956B2BD54FFF00B3F3D2 /* MapStyleConfiguration.swift in Sources */,
+				3D9FCF102BD4FCCE00A4945B /* MapManager.swift in Sources */,
+				3DC3956D2BD5516700B3F3D2 /* MapStyleView.swift in Sources */,
 				3D9FCF092BD4E14200A4945B /* MTPlacemark.swift in Sources */,
 				3DF1F4E62BD4D47500483874 /* DestinationLocationView.swift in Sources */,
+				3D9FCF132BD50F4C00A4945B /* LocationDetailView.swift in Sources */,
 				3DF1F4E42BD4D44900483874 /* TripMapView.swift in Sources */,
+				3D9FCF172BD52E8600A4945B /* LocationDeniedView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +390,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Trip/MainResource/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please Allow your location to provide plans, routes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -367,6 +420,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Trip/MainResource/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please Allow your location to provide plans, routes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
