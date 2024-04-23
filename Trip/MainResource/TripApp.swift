@@ -6,13 +6,25 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct TripApp: App {
   
+  @State private var locationManager = LocationManager()
+  
   var body: some Scene {
-    WindowGroup {
+    WindowGroup(content: mainView)
+      .modelContainer(for: Destination.self)
+      .environment(locationManager)
+  }
+  
+  @ViewBuilder
+  private func mainView() -> some View {
+    if locationManager.isAuthorized {
       ContentView()
+    } else {
+      LocationDeniedView()
     }
   }
 }
