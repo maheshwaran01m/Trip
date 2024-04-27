@@ -33,7 +33,7 @@ struct ContentView: View {
   }
   
   private var destinationLocationView: some View {
-    DestinationLocationView()
+    DestinationListView()
       .tabItem {
         Label("Destination", systemImage: "globe.desk")
       }
@@ -44,4 +44,5 @@ struct ContentView: View {
 
 #Preview {
   ContentView()
+    .modelContainer(Destination.preview)
 }
